@@ -1,3 +1,9 @@
+# ЗАКРЫТО НА РЕКОНСТРУКЦИЮ
+
+<p align="center">
+  <img src="https://img.freepik.com/free-vector/maintenance-road-sign_1063-51.jpg">
+</p>
+
 # Remnawave Rust SDK
 
 ![Crates.io Version](https://img.shields.io/crates/v/remnawave) ![GitHub Tag](https://img.shields.io/github/v/tag/remnawave/rust-sdk) ![GitHub Repo stars](https://img.shields.io/github/stars/remnawave/rust-sdk)
