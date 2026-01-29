@@ -184,7 +184,7 @@ pub struct RawSubscriptionUser {
     pub external_squad_uuid: Option<Uuid>,
     pub subscription_url: String,
     pub last_connected_node: Option<LastConnectedNode>,
-    pub happ: Option<HappConfig>,
+    pub happ: HappConfig,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
@@ -205,6 +205,7 @@ pub struct Subscription {
     pub links: Vec<String>,
     pub ss_conf_links: HashMap<String, String>,
     pub subscription_url: String,
+    #[serde(default)]
     pub happ: Option<HappConfig>,
 }
 
