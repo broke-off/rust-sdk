@@ -130,7 +130,7 @@ pub struct UserData {
     pub short_uuid: String,
     pub username: String,
     pub status: UserStatus,
-    pub used_traffic_bytes: i64,
+    pub used_traffic_bytes: Option<i64>,
     pub lifetime_used_traffic_bytes: i64,
     pub traffic_limit_bytes: i64,
     #[serde(default)]
