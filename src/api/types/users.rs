@@ -140,6 +140,7 @@ pub struct UserData {
     pub used_traffic_bytes: Option<i64>,
     pub lifetime_used_traffic_bytes: Option<i64>,
     pub traffic_limit_bytes: i64,
+    pub user_traffic: UserTraffic,
     #[serde(default)]
     pub traffic_limit_strategy: TrafficLimitStrategy,
     pub sub_last_user_agent: Option<String>,
@@ -157,7 +158,6 @@ pub struct UserData {
     pub email: Option<String>,
     pub hwid_device_limit: Option<usize>,
     pub first_connected_at: Option<DateTime<Utc>>,
-    pub user_traffic: UserTraffic,
     #[serde(default)]
     pub last_triggered_threshold: usize,
     pub created_at: DateTime<Utc>,
