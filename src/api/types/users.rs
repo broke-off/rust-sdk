@@ -125,6 +125,13 @@ pub struct UpdateUserResponseDto {
 
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq)]
 #[serde(rename_all = "camelCase")]
+pub struct UserTraffic {
+    pub used_traffic_bytes: i64,
+    pub lifetime_used_traffic_bytes: i64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq)]
+#[serde(rename_all = "camelCase")]
 pub struct UserData {
     pub uuid: Uuid,
     pub short_uuid: String,
@@ -150,6 +157,7 @@ pub struct UserData {
     pub email: Option<String>,
     pub hwid_device_limit: Option<usize>,
     pub first_connected_at: Option<DateTime<Utc>>,
+    pub user_traffic: UserTraffic,
     #[serde(default)]
     pub last_triggered_threshold: usize,
     pub created_at: DateTime<Utc>,
