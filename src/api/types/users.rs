@@ -131,7 +131,7 @@ pub struct UserData {
     pub username: String,
     pub status: UserStatus,
     pub used_traffic_bytes: Option<i64>,
-    pub lifetime_used_traffic_bytes: i64,
+    pub lifetime_used_traffic_bytes: Option<i64>,
     pub traffic_limit_bytes: i64,
     #[serde(default)]
     pub traffic_limit_strategy: TrafficLimitStrategy,
