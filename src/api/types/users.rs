@@ -158,7 +158,7 @@ pub struct UserData {
     pub external_squad_uuid: Option<Uuid>,
     pub subscription_url: String,
     pub last_connected_node: Option<LastConnectedNode>,
-    pub happ: Happ,
+    pub happ: Option<Happ>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq)]
