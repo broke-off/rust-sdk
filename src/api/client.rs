@@ -1,5 +1,6 @@
 use reqwest::Client as HttpClient;
 
+#[derive(Clone)]
 pub struct ApiClient {
     base_url: String,
     pub token: Option<String>,
