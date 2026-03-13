@@ -269,7 +269,7 @@ pub struct GetUserByTagResponseDto {
 #[serde(rename_all = "camelCase")]
 pub struct RevokeUserSubscriptionBodyDto {
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub short_uuid: Option<String>,
+    pub revoke_only_passwords: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq)]
