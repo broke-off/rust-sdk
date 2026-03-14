@@ -84,6 +84,7 @@ pub struct GetAllHwidDevicesData {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq)]
+#[serde(rename_all = "camelCase")]
 pub struct DeleteAllUserHwidDevicesRequestDto {
     pub user_uuid: Uuid,
 }
