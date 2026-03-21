@@ -48,7 +48,7 @@ impl fmt::Display for SubscriptionTemplateType {
 #[serde(rename_all = "camelCase")]
 pub struct SubscriptionUser {
     pub short_uuid: String,
-    pub days_left: usize,
+    pub days_left: isize,
     pub traffic_used: String,
     pub traffic_limit: String,
     pub lifetime_traffic_used: String,
@@ -253,7 +253,7 @@ pub struct BasicSubscription {
 #[serde(rename_all = "camelCase")]
 pub struct BasicSubscriptionUser {
     pub short_uuid: String,
-    pub days_left: usize,
+    pub days_left: isize,
     pub traffic_used: String,
     pub traffic_limit: String,
     pub username: String,
