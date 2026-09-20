@@ -5,7 +5,7 @@ use uuid::Uuid;
 #[serde(rename_all = "camelCase")]
 pub struct HwidDeviceDto {
     pub hwid: String,
-    pub user_uuid: Uuid,
+    pub user_id: usize,
     pub platform: Option<String>,
     pub os_version: Option<String>,
     pub device_model: Option<String>,
